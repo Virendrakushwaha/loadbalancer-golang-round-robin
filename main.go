@@ -16,9 +16,9 @@ func main() {
 
 	// create list of servers
 	servers := []models.Server{
-		models.NewServer("https://github.com"),
-		models.NewServer("https://google.com"),
-		models.NewServer("https://linkedin.com"),
+		models.NewServer("https://www.github.com"),
+		models.NewServer("https://www.google.com"),
+		models.NewServer("https://www.facebook.com"),
 	}
 
 	// create load balancer

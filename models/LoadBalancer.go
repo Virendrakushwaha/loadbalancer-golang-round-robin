@@ -24,7 +24,7 @@ func (lb *LoadBalancer) GetNextAvailableServer() Server {
 
 func (lb *LoadBalancer) ServeProxy(rw http.ResponseWriter, req *http.Request) {
 	targetServer := lb.GetNextAvailableServer()
-	fmt.Printf("Forwarding request to address : %q", targetServer.Address())
+	fmt.Printf("Forwarding request to address : %q\n", targetServer.Address())
 	targetServer.Serve(rw, req)
 }
 

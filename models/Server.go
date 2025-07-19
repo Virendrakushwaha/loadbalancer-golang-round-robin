@@ -23,6 +23,7 @@ func (s *Server) IsAlive() bool {
 }
 
 func (s *Server) Serve(rw http.ResponseWriter, req *http.Request) {
+	fmt.Println("Serving addr: " + s.Addr)
 	s.Proxy.ServeHTTP(rw, req)
 }
 
